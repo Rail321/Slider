@@ -37,7 +37,7 @@ setTimeout(() => {
 setInterval(() => {
 
   if (!isTouched) {
-    currentPage < pages ? currentPage++ : currentPage = pages
+    currentPage < pages ? currentPage++ : currentPage = infinity ? 0 : pages
     row.style.transform = `translateX(-${currentPage}00%)`
     changeActiveLink()
   }
